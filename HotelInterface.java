@@ -1,0 +1,7 @@
+import java.rmi.*;
+
+public interface HotelInterface extends Remote
+{
+    String bookRoom(String guestName) throws RemoteException;
+    String cancelBooking(String guestName) throws RemoteException;
+}
